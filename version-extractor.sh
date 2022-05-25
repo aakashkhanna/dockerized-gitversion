@@ -1,6 +1,6 @@
 cd /repo
 
-export VERSION_INFO="$(/tools/dotnet-gitversion)"
+export VERSION_INFO="$(/tools/dotnet-gitversion /nocache)"
 
 echo "Version Info:"
 echo "--------------------------------------------------------------------------------------"
