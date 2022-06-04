@@ -26,4 +26,4 @@ echo "Git Commit Hash:            $COMMIT_HASH"
 echo
 
 touch version.txt
-echo $DOCKER_TAG >> version.txt
+echo $SEM_VERSION >> version.txt
