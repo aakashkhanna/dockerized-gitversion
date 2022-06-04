@@ -1,6 +1,6 @@
 cd /repo
 
-export VERSION_INFO="$(/tools/dotnet-gitversion)"
+export VERSION_INFO="$(/tools/dotnet-gitversion /nocache)"
 
 echo "Version Info:"
 echo "--------------------------------------------------------------------------------------"
@@ -26,4 +26,4 @@ echo "Git Commit Hash:            $COMMIT_HASH"
 echo
 
 touch version.txt
-echo $DOCKER_TAG >> version.txt
+echo $SEM_VERSION >> version.txt
